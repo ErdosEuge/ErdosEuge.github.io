@@ -8,6 +8,6 @@ Site Under Construction
 
 # Daily Menu
 
-* [Tech notes](./tech_notes.html)
-* [Interesting stuff](./another-page.html)
-* [3 Years travel](./travel.html)
+* [Tech notes](./pages/tech_notes.html)
+* [Interesting stuff](./pages/another-page.html)
+* [3 Years travels](./pages/travel.html)
