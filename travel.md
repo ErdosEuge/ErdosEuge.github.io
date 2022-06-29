@@ -2,7 +2,9 @@
 layout: default
 ---
 
-## 3 yrz travel
+# 3 yrz travel
+
+In this space I collect all trips/travels I made since March 2019. Three kind of information here: *Country* , *Months YYYY*, *How I got there*.
 
 - **Londra** Marzo 2019 🏴󠁧󠁢󠁥󠁮󠁧󠁿 ✈️
 
