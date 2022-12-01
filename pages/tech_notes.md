@@ -15,4 +15,8 @@ assert a == 6
 ```
 
 
+```python
+import pandas as pd
+```
+
 [back](../)
