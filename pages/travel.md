@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# 3 yrz travels
+# 4 yrz travels
 
 In this space I collect all trips/travels I made since March 2019. Three kind of information here: *Country*, *Months*, *YYYY*, *How I got there*.
 
@@ -72,5 +72,32 @@ In this space I collect all trips/travels I made since March 2019. Three kind of
 
 - **Amsterdam** Giugno 2022 🇳🇱✈️
 
-  
+- **Barcellona** Luglio 2022 ✈️
+
+- **Paesi Baschi** Agosto 2022 🚗
+
+- **Croazia** Agosto 2022 🚗
+
+- **Lussemburgo** Settembre 2022 ✈️🏡
+
+- **Padova** Settembre 2022 ✈️
+
+- **Barcellona** Ottobre 2022 ✈️
+
+- **Bruxelles** Ottobre 2022 🚗
+
+- **Amsterdam** Ottobre 2022 🚗
+
+- **Milano** Novembre 2022 🚗
+
+- **Lisbona** Novembre 2022 ✈️
+
+- **Lanzarote** Dicembre 2022 ✈️
+
+- **Barcellona** Dicembre 2022 ✈️
+
+- **Madrid** Dicembre 2022 🚂
+
+- **Padova** Dicembre 2022 ✈️
+
 [back](../)
