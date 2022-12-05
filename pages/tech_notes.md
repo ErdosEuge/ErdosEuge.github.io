@@ -10,13 +10,18 @@ Blocks are mainly written  in *Python* or *Pyspark*, but of course, *R* is alway
 Please have a look (forgive the mess). 😊
 
 
+
+*How to except all errors in Python (ugly and dangerous way)*
 ```python
-assert a == 6
+import traceback
+import logging
+
+try:
+    whatever()
+except Exception as e:
+    logging.error(traceback.format_exc())
+    # Logs the error appropriately. 
 ```
 
-
-```python
-import pandas as pd
-```
 
 [back](../)
