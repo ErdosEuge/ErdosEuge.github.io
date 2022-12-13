@@ -3,8 +3,6 @@
 What's **Data Sonification** about?
 
 
-
-
 <img src="./assets/gif/gigio.gif" alt="gigio" />
 
 <!-- <iframe src="./assets/img/flowers.html"

@@ -6,6 +6,8 @@ layout: default
 Work in progress...
 ```
 
+
+
 # Projects
 
 This section show and describe my main projects done so fare both in my accademic and professional life as a Statistician and Data Scientist.
