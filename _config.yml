@@ -4,3 +4,5 @@ description: My personal portfolio, where I collect past and current projects, i
 show_downloads: false
 google_analytics: true
 theme: jekyll-theme-minimal
+url: 'https://erdoseuge.github.io/'
+baseurl: ''
