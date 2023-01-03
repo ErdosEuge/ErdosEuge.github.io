@@ -23,5 +23,18 @@ except Exception as e:
     # Logs the error appropriately. 
 ```
 
+*How to check if a pd.DataFrame object is empty*:
+```python
+import pandas as pd
+
+# Create an empty DataFrame
+df = pd.DataFrame()
+
+# Check if the DataFrame is empty
+if df.empty:
+    print('DataFrame is empty')
+else:
+    print('DataFrame is not empty')
+```
 
 [back](../)

@@ -1,9 +1,13 @@
+---
+layout: default
+---
+
 # Data Sonification
 
 What's **Data Sonification** about?
 
 
-<img src="./assets/gif/gigio.gif" alt="gigio" />
+<img src="../assets/gif/gigio.gif" alt="gigio" />
 
 <!-- <iframe src="./assets/img/flowers.html"
     sandbox="allow-same-origin allow-scripts"
@@ -13,3 +17,11 @@ What's **Data Sonification** about?
     seamless="seamless"
     frameborder="0">
 </iframe> -->
+
+To do:
+
+- [kindof definition]
+- [didascalia img (caption)]
+- Data sonification event
+- link a post di Sergio
+- ...
