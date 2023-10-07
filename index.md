@@ -10,3 +10,4 @@ layout: default
 * [Erdos notes](./pages/another-page.html)
 * [4 Years travels](./pages/travel.html)
 * [Data Sonification](./pages/datason.html)
+* [Stadiums](./pages/stadium.html)
