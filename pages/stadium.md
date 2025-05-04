@@ -18,5 +18,5 @@ Here's a list of the stadiums I had the chance to visit, for a game, so far.
 - London Stadium, London, 🇬🇧
 - Luxembourg Stadium, Luxembourg, 🇱🇺
 - Allianz Arena, Munchen, 🇩🇪
-- Amsterdam ArenA, Amsterdam, 🇳🇱
+- Amsterdam Arena, Amsterdam, 🇳🇱
 - Estádio do Sport Lisboa e Benfica, Lisbona, 🇵🇹
