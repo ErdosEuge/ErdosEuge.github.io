@@ -13,10 +13,12 @@ Here's a list of the stadiums I had the chance to visit, for a game, so far.
 - Allianz Stadium, Torino, 🇮🇹
 - Stadio Olimpico, Roma, 🇮🇹
 - Unipol Domus, Cagliari, 🇮🇹
+- Stadio Ennio Tardini, Parma, 🇮🇹
 - Stadio Tullio Salieri, Lumezzane, 🇮🇹
 - Camp Nou, Barcelona, 🇪🇸
 - London Stadium, London, 🇬🇧
 - Luxembourg Stadium, Luxembourg, 🇱🇺
 - Allianz Arena, Munchen, 🇩🇪
+- Veltins-Arena, Gelsenkirchen, 🇩🇪
 - Amsterdam Arena, Amsterdam, 🇳🇱
 - Estádio do Sport Lisboa e Benfica, Lisbona, 🇵🇹
