@@ -1,4 +1,13 @@
 ---
 ---
 
-@import "jekyll-theme-minimal";
+@import "{{ site.theme }}";
+
+.ai-disclaimer {
+  font-style: italic;
+  font-size: 0.9em;
+  color: #666;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
