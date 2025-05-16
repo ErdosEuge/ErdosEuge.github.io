@@ -12,6 +12,8 @@ layout: default
 
 ## People
 
+- [*Paul Graham*](https://www.paulgraham.com/index.html) (`Essayist`, `CS`, `Yc founder`)
+
 - [*Lex Fridman*](https://www.youtube.com/user/lexfridman) (`Podcaster`, `Tech`, `Science`, `Life`)
 
 - [*Casey Neistat*](https://www.youtube.com/@casey) (`YTer`, `Video Maker`, `Surf`)
