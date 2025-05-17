@@ -17,14 +17,11 @@ This section show and describe my main projects done so fare both in my accademi
             
             // Group projects by year
             const projectsByYear = projects.reduce((acc, project) => {
-                // Handle comma-separated years
-                const years = project.Year.toString().split(',').map(y => y.trim());
-                years.forEach(year => {
-                    if (!acc[year]) {
-                        acc[year] = [];
-                    }
-                    acc[year].push(project);
-                });
+                const year = project.Year.toString();
+                if (!acc[year]) {
+                    acc[year] = [];
+                }
+                acc[year].push(project);
                 return acc;
             }, {});
 
@@ -37,9 +34,29 @@ This section show and describe my main projects done so fare both in my accademi
                 yearSection.className = 'year-section';
                 yearSection.innerHTML = `<h2>${year}</h2>`;
 
-                // Sort projects within each year by name
-                projectsByYear[year].sort((a, b) => a.Name.localeCompare(b.Name))
-                    .forEach(project => {
+                // For 2018, put Insurance-based Recommender System first
+                if (year === '2018') {
+                    const otherProjects = projectsByYear[year].filter(p => p.Name !== 'Insurance-based Recommender System');
+                    const insuranceProject = projectsByYear[year].find(p => p.Name === 'Insurance-based Recommender System');
+                    
+                    // Display Insurance project first
+                    if (insuranceProject) {
+                        const projectDiv = document.createElement('div');
+                        projectDiv.className = 'project-card';
+                        projectDiv.innerHTML = `
+                            <h3>${insuranceProject.Name}</h3>
+                            <p><strong>Description:</strong> ${insuranceProject.Description}</p>
+                            <p><strong>Domain:</strong> ${insuranceProject.Domain}</p>
+                            <p><strong>Stakeholder:</strong> ${insuranceProject.Stakeholder}</p>
+                            <p><strong>Programming Languages:</strong> ${insuranceProject["Programming Languages"]}</p>
+                            <p><strong>Tools:</strong> ${insuranceProject.Tools}</p>
+                            <p><strong>Algorithms:</strong> ${insuranceProject.Algorithms}</p>
+                        `;
+                        yearSection.appendChild(projectDiv);
+                    }
+
+                    // Display other projects after
+                    otherProjects.forEach(project => {
                         const projectDiv = document.createElement('div');
                         projectDiv.className = 'project-card';
                         projectDiv.innerHTML = `
@@ -47,12 +64,29 @@ This section show and describe my main projects done so fare both in my accademi
                             <p><strong>Description:</strong> ${project.Description}</p>
                             <p><strong>Domain:</strong> ${project.Domain}</p>
                             <p><strong>Stakeholder:</strong> ${project.Stakeholder}</p>
-                            <p><strong>Programming Languages:</strong> ${project.Programming_Languages}</p>
+                            <p><strong>Programming Languages:</strong> ${project["Programming Languages"]}</p>
                             <p><strong>Tools:</strong> ${project.Tools}</p>
                             <p><strong>Algorithms:</strong> ${project.Algorithms}</p>
                         `;
                         yearSection.appendChild(projectDiv);
                     });
+                } else {
+                    // For other years, display projects in original order
+                    projectsByYear[year].forEach(project => {
+                        const projectDiv = document.createElement('div');
+                        projectDiv.className = 'project-card';
+                        projectDiv.innerHTML = `
+                            <h3>${project.Name}</h3>
+                            <p><strong>Description:</strong> ${project.Description}</p>
+                            <p><strong>Domain:</strong> ${project.Domain}</p>
+                            <p><strong>Stakeholder:</strong> ${project.Stakeholder}</p>
+                            <p><strong>Programming Languages:</strong> ${project["Programming Languages"]}</p>
+                            <p><strong>Tools:</strong> ${project.Tools}</p>
+                            <p><strong>Algorithms:</strong> ${project.Algorithms}</p>
+                        `;
+                        yearSection.appendChild(projectDiv);
+                    });
+                }
 
                 container.appendChild(yearSection);
             });
