@@ -32,7 +32,7 @@
   {
     "Name":"NLP end-to-end system on bank's product claims",
     "Description":"Developed an end-to-end NLP system to extract, process, and operationalize information from customer claims related to banking products. The approach leveraged Named Entity Recognition (NER) techniques to identify and classify the underlying root causes of each complaint. On top of the extracted entities, an anomaly detection layer was implemented to proactively identify unusual patterns and potential operational risks. Finally, results were made accessible through an interactive Streamlit dashboard, allowing stakeholders to explore trends, entity distributions, and flagged anomalies in real time.",
-    "Year":"2019, 2020",
+    "Year":2019,
     "Programming Languages":"Python",
     "Tools":"Streamlit, Kubernetes",
     "Algorithms":"NLP Stack(Tokenization, Tf-IDF, NER, Embeddings), t-sne, XgBoost classifier",
@@ -42,7 +42,7 @@
   {
     "Name":"Customer Knowledge",
     "Description":"Led a team of four data scientists in making sense of over 4.5 billion daily transactional records from banking customers. The objective was to classify users into meaningful behavioral segments based on features such as payment purpose and market type associated with each transaction, enabling targeted marketing strategies. To handle the scale and velocity of the data, the entire pipeline was built using parallelized computing frameworks, leveraging Apache Spark to train and deploy models efficiently on massive datasets.",
-    "Year":"2020, 2021",
+    "Year":2020,
     "Programming Languages":"Spark",
     "Tools":"Databricks",
     "Algorithms":"NLP Stack, BERTopic, HDBSCAN",
@@ -52,7 +52,7 @@
   {
     "Name":"Python & ML Trainer",
     "Description":"Delivered corporate training courses covering Python programming (from fundamentals to advanced applications) and Machine Learning (from theoretical foundations to practical implementation in Python). Led classes of up to 20 participants with diverse backgrounds and seniority levels, guiding them through hands-on exercises and real-world examples. Emphasis was placed on active coding sessions and practical understanding, enabling participants to progress from first steps in Python to applied ML workflows on their own laptops.",
-    "Year":2021.2022,
+    "Year":2021,
     "Programming Languages":"Python",
     "Tools":"Pandas, Numpy, PyTorch, Keras",
     "Algorithms":"\/",
@@ -62,7 +62,7 @@
   {
     "Name":"Marketing Mix Modelling",
     "Description":"Conducted a Marketing Mix Modeling (MMM) study to quantify the impact of different marketing levers on Ferrero\u2019s product sales. Using time-series regression techniques, I decomposed sales variations across channels, isolating the contribution of marketing campaigns (TV, digital, in-store promotions) while controlling for seasonality, trends, and external factors. The model enabled the estimation of ROI for each marketing channel and provided actionable insights to optimize future media allocation strategies.",
-    "Year":2023,
+    "Year":2022,
     "Programming Languages":"Python",
     "Tools":"Databricks, Custom Front-end",
     "Algorithms":"Hierarchical Bayesian Regression",
@@ -72,7 +72,7 @@
   {
     "Name":"Correlation Analysis",
     "Description":"Developed a custom correlation analysis pipeline to assess the price elasticity of Ferrero\u2019s products. The objective was to estimate the strength and direction of the relationship between product prices and sales volumes, accounting for potential confounding variables such as seasonality and promotional effects. This analysis supported data-driven pricing strategy decisions and informed elasticity assumptions in broader econometric models.",
-    "Year":2023,
+    "Year":2022,
     "Programming Languages":"Python",
     "Tools":"Databricks",
     "Algorithms":"Custom Algorithm",
@@ -82,7 +82,7 @@
   {
     "Name":"ML Ops structure",
     "Description":"Designed and implemented the MLOps infrastructure for Ferrero\u2019s AI team, enabling scalable, reliable deployment and monitoring of machine learning models across projects. The architecture included version-controlled pipelines, automated model training and evaluation workflows, and CI\/CD integration for seamless production deployment.",
-    "Year":2024,
+    "Year":2023,
     "Programming Languages":"Git",
     "Tools":"Github",
     "Algorithms":"\/",
@@ -92,7 +92,7 @@
   {
     "Name":"Revisight",
     "Description":"Built an end-to-end NLP system\u2014Revisight\u2014designed to process, translate, and classify customer reviews of Ferrero products across eCommerce platforms in near real-time. The pipeline handled multilingual input, applied machine translation where needed, and performed sentiment analysis and topic classification to extract actionable insights. The system was optimized for low-latency processing and deployed with real-time monitoring to support marketing and product teams.",
-    "Year":2024,
+    "Year":2023,
     "Programming Languages":"Python",
     "Tools":"Hugging Face, MISTRAL, Databricks, Streamlit",
     "Algorithms":"NLP Stack, BERTopic, Top2Vec",

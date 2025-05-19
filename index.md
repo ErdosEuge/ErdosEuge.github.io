@@ -11,3 +11,4 @@ layout: default
 * [6 Years travels](./pages/travel.html)
 * [Data Sonification](./pages/datason.html)
 * [Stadiums](./pages/stadium.html)
+* [AI](./pages/ai.html)
