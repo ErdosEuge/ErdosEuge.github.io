@@ -21,7 +21,7 @@
           <img src="{{site.logo | relative_url}}" alt="Logo" />
         {% endif %}
 
-        <p class="description">
+        <div class="description">
           {% assign lines = site.description | split: "|" %}
           {% for line in lines %}
             {% assign line = line | strip %}
@@ -32,7 +32,24 @@
             {% assign line = line | replace: "Barcelona", "<span class='bold-text'>Barcelona</span>" %}
             {{ line }}<br>
           {% endfor %}
-        </p>
+        </div>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/eugenio-andreose-a65005152/" target="_blank">
+            <img src="{{ site.baseurl }}/assets/img/ln.png" alt="LinkedIn" class="social-icon">
+          </a>
+          <a href="https://github.com/ErdosEuge" target="_blank">
+            <img src="{{ site.baseurl }}/assets/img/gb.png" alt="GitHub" class="social-icon">
+          </a>
+          <a href="https://x.com/ErdosEuge" target="_blank">
+            <img src="{{ site.baseurl }}/assets/img/twitter.png" alt="Twitter" class="social-icon">
+          </a>
+          <a href="https://cogni-tex.com/" target="_blank">
+            <img src="{{ site.baseurl }}/assets/img/cx.png" alt="CogniteX" class="social-icon">
+          </a>
+          <a href="mailto:andreose.eugenio@gmail.com">
+            <img src="{{ site.baseurl }}/assets/img/mail.png" alt="Email" class="social-icon">
+          </a>
+        </div>
 
         {% if site.github.is_project_page %}
         <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>
