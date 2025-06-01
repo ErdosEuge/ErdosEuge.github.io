@@ -1,8 +1,10 @@
-title: Erdos Portfolio
+title: Eugenio &lt; Erdos &gt; Andreose
 logo: /assets/img/buenos_aires_circle.png
-description: My personal portfolio, where I collect past and current projects, ideas, tech and science notes.
+description: "(👋) Hi there! | (💻) Statistician in love with Computer Science stuff. I've been playing around with Language Models way before things turned dramatically fancy into AI. | (📍) Currently based in Barcelona."
 show_downloads: false
 google_analytics: true
 theme: jekyll-theme-minimal
 url: 'https://erdoseuge.github.io/'
 baseurl: ''
+github:
+  is_project_page: false

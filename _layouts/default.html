@@ -15,13 +15,24 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
+        <h1><a href="{{ "/" | absolute_url }}">Eugenio &lt; Erdos &gt; Andreose</a></h1>
 
         {% if site.logo %}
           <img src="{{site.logo | relative_url}}" alt="Logo" />
         {% endif %}
 
-        <p>{{ site.description | default: site.github.project_tagline }}</p>
+        <p class="description">
+          {% assign lines = site.description | split: "|" %}
+          {% for line in lines %}
+            {% assign line = line | strip %}
+            {% assign line = line | replace: "Statistician", "<span class='bold-text'>Statistician</span>" %}
+            {% assign line = line | replace: "Computer Science", "<span class='bold-text'>Computer Science</span>" %}
+            {% assign line = line | replace: "Language Models", "<span class='bold-text'>Language Models</span>" %}
+            {% assign line = line | replace: "AI", "<span class='bold-text'>AI</span>" %}
+            {% assign line = line | replace: "Barcelona", "<span class='bold-text'>Barcelona</span>" %}
+            {{ line }}<br>
+          {% endfor %}
+        </p>
 
         {% if site.github.is_project_page %}
         <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>
