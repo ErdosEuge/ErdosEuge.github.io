@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Projects
+# Project Repository
 
 This section show and describe my main projects done so fare both in my accademic and professional life as a Statistician and Data Scientist.
 
@@ -40,29 +40,27 @@ This section show and describe my main projects done so fare both in my accademi
             });
 
             const layout = {
-                title: 'Project Timeline and Scale',
+                margin: { t: 20, r: 20, b: 40, l: 60 },
                 xaxis: {
                     title: 'Year',
                     gridcolor: 'lightgray',
-                    zerolinecolor: 'lightgray'
+                    zerolinecolor: 'lightgray',
+                    showgrid: false
                 },
                 yaxis: {
                     title: 'Lines of Code',
                     gridcolor: 'lightgray',
-                    zerolinecolor: 'lightgray'
+                    zerolinecolor: 'lightgray',
+                    showgrid: false
                 },
                 hovermode: 'closest',
-                showlegend: true,
-                legend: {
-                    x: 1,
-                    xanchor: 'right',
-                    y: 1
-                },
+                showlegend: false,
                 paper_bgcolor: 'rgba(0,0,0,0)',
-                plot_bgcolor: 'rgba(0,0,0,0)'
+                plot_bgcolor: 'rgba(0,0,0,0)',
+                autosize: true
             };
 
-            Plotly.newPlot('bubble-chart', traces, layout);
+            Plotly.newPlot('bubble-chart', traces, layout, {responsive: true});
         })
         .catch(error => console.error('Error loading chart data:', error));
 </script>
@@ -156,6 +154,9 @@ This section show and describe my main projects done so fare both in my accademi
 </script>
 
 <style>
+    h1 {
+        font-weight: normal;
+    }
     .year-section {
         margin-bottom: 2em;
     }
