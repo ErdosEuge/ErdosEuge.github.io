@@ -6,6 +6,67 @@ layout: default
 
 This section show and describe my main projects done so fare both in my accademic and professional life as a Statistician and Data Scientist.
 
+<!-- Bubble Chart Container -->
+<div id="bubble-chart" style="width: 100%; height: 500px; margin-bottom: 2em;"></div>
+
+<script>
+    // Fetch data and create bubble chart
+    fetch('/assets/data/Projects_v2.json')
+        .then(response => response.json())
+        .then(data => {
+            // Create traces for each domain
+            const domains = [...new Set(data.map(item => item.Domain))];
+            const traces = domains.map(domain => {
+                const domainData = data.filter(item => item.Domain === domain);
+                return {
+                    x: domainData.map(item => item.Year),
+                    y: domainData.map(item => item["# Line of Code"]),
+                    mode: 'markers',
+                    name: domain,
+                    text: domainData.map(item => item.Name),
+                    marker: {
+                        size: domainData.map(item => item.Months * 5), // Scale bubble size
+                        sizemode: 'area',
+                        sizeref: 2 * Math.max(...domainData.map(item => item.Months)) / (40**2),
+                        sizemin: 4
+                    },
+                    hovertemplate: 
+                        '<b>%{text}</b><br>' +
+                        'Year: %{x}<br>' +
+                        'Lines of Code: %{y}<br>' +
+                        'Months: %{marker.size/5}<br>' +
+                        '<extra></extra>'
+                };
+            });
+
+            const layout = {
+                title: 'Project Timeline and Scale',
+                xaxis: {
+                    title: 'Year',
+                    gridcolor: 'lightgray',
+                    zerolinecolor: 'lightgray'
+                },
+                yaxis: {
+                    title: 'Lines of Code',
+                    gridcolor: 'lightgray',
+                    zerolinecolor: 'lightgray'
+                },
+                hovermode: 'closest',
+                showlegend: true,
+                legend: {
+                    x: 1,
+                    xanchor: 'right',
+                    y: 1
+                },
+                paper_bgcolor: 'rgba(0,0,0,0)',
+                plot_bgcolor: 'rgba(0,0,0,0)'
+            };
+
+            Plotly.newPlot('bubble-chart', traces, layout);
+        })
+        .catch(error => console.error('Error loading chart data:', error));
+</script>
+
 <div id="projects-container"></div>
 
 <script>
